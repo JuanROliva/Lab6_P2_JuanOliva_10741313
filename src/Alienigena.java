@@ -8,6 +8,13 @@ public class Alienigena {
     public Alienigena() {
     }
 
+    public Alienigena(String nombre, String raza, int edad, boolean amenaza) {
+        this.nombre = nombre;
+        this.raza = raza;
+        this.edad = edad;
+        this.amenaza = amenaza;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -42,6 +49,6 @@ public class Alienigena {
 
     @Override
     public String toString() {
-        return "Alienigena" + nombre;
+        return "Alien" + nombre;
     }
 }

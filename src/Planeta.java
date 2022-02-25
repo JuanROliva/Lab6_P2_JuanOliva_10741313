@@ -64,7 +64,7 @@ public class Planeta {
         return nombrePlaneta;
     }
 
-    public boolean validadNombre(String nombre) {
+    public boolean validarNombre(String nombre) {
         return nombre.toLowerCase().equals(this.nombrePlaneta);
     }
 
