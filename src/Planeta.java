@@ -12,11 +12,18 @@ public class Planeta {
     }
 
     public Planeta(String nombrePlaneta, boolean aguaPresente,
-            int tamanoPlaneta, int temperaturaEnCelcius) {
+        int tamanoPlaneta, int temperaturaEnCelcius) {
         this.nombrePlaneta = nombrePlaneta;
         this.aguaPresente = aguaPresente;
         this.tamanoPlaneta = tamanoPlaneta;
         this.temperaturaEnCelcius = temperaturaEnCelcius;
+    }
+    
+    public Planeta(Planeta p) {
+        this.nombrePlaneta = p.getNombrePlaneta();
+        this.aguaPresente = p.isAguaPresente();
+        this.tamanoPlaneta = p.getTamanoPlaneta();
+        this.temperaturaEnCelcius = p.getTemperaturaEnCelcius();
     }
 
     public String getNombrePlaneta() {
@@ -58,6 +65,8 @@ public class Planeta {
     public void setHabitantes(ArrayList<Alienigena> habitantes) {
         this.habitantes = habitantes;
     }
+    
+    
 
     @Override
     public String toString() {

@@ -11,8 +11,8 @@ public class Explorador extends Alienigena {
     }
 
     public Explorador(Planeta planetaFavotito, String nombre, String raza,
-            int edad, boolean amenaza) throws Exception {
-        super(nombre, raza, edad, amenaza);
+            int edad, boolean amenaza, Planeta planeta) throws Exception {
+        super(nombre, raza, edad, amenaza, planeta);
         setPlanetaFavotito(planetaFavotito);
     }
 

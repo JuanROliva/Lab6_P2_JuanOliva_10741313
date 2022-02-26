@@ -8,8 +8,8 @@ public class Cazador extends Alienigena {
     }
 
     public Cazador(int cantHumanosAtrapados, String nombre, String raza, 
-            int edad, boolean amenaza) {
-        super(nombre, raza, edad, amenaza);
+            int edad, boolean amenaza, Planeta planeta) {
+        super(nombre, raza, edad, amenaza, planeta);
         this.cantHumanosAtrapados = cantHumanosAtrapados;
     }
 

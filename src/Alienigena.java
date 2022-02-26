@@ -4,15 +4,17 @@ public class Alienigena {
     private String nombre, raza;
     private int edad;
     private boolean amenaza;
+    private Planeta planeta;
 
     public Alienigena() {
     }
 
-    public Alienigena(String nombre, String raza, int edad, boolean amenaza) {
+    public Alienigena(String nombre, String raza, int edad, boolean amenaza, Planeta planeta) {
         this.nombre = nombre;
         this.raza = raza;
         this.edad = edad;
         this.amenaza = amenaza;
+        this.planeta = planeta;
     }
 
     public String getNombre() {
@@ -45,6 +47,14 @@ public class Alienigena {
 
     public void setAmenaza(boolean amenaza) {
         this.amenaza = amenaza;
+    }
+
+    public Planeta getPlaneta() {
+        return planeta;
+    }
+
+    public void setPlaneta(Planeta planeta) {
+        this.planeta = planeta;
     }
 
     @Override
