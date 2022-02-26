@@ -26,6 +26,7 @@ public class Prinicipal extends javax.swing.JFrame {
 
     public Prinicipal() {
         initComponents();
+        JOptionPane.showMessageDialog(this, "El arbol funciona, solo esta disponible la parte de cazador, y favor revisar que todos\n los datos del alien esten llenos al agregar, para que se vean en dicho arbol");
     }
 
     @SuppressWarnings("unchecked")
